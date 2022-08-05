@@ -1,0 +1,16 @@
+.title {
+    color: rgba(0, 187, 187, 0.589)
+}
+
+.todoList {
+    display: block;
+    text-align: center;
+}
+
+.list:nth-child(odd) > .label {
+    background-color: antiquewhite;
+}
+
+.list:nth-child(even) > .label {
+    background-color: aquamarine;
+}
