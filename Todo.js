@@ -1,17 +1,16 @@
 import React from 'react'
 
 const Todo = ({todo, toggleTodo}) => {
-  const updateTodoCompleted = (todo) => {
+  const updateTodoCompleted = () => {
     toggleTodo(todo.id);
-    todo.completed = !todo.completed
   };
 
   return (
-    <div>
-        <label>
-        <input type="checkbox" onChange={updateTodoCompleted(todo)} checked={todo.completed}/>
+    <div className="list">
+      <label className="label">
+        <input type = "checkbox" checked={todo.completed} onChange={updateTodoCompleted}></input>
         {todo.name}
-        </label>
+      </label>
     </div>
   );
 };
